@@ -570,7 +570,7 @@ function urlIsVideo(url) {
     return url.slice(url.length - 4).toLowerCase();
   }
   if (url.slice(url.length - 4).toLowerCase() == "m3u8") {
-    return "application/x-mpegURL";
+    return "video/mp4";
   }
   return false;
 }
